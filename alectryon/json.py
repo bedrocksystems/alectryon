@@ -26,17 +26,17 @@ from importlib import import_module
 from itertools import zip_longest
 from os import path, makedirs, unlink
 
-from . import core
+from . import serapi
 
 TYPE_OF_ALIASES = {
-    "text": core.Text,
-    "hypothesis": core.Hypothesis,
-    "goal": core.Goal,
-    "message": core.Message,
-    "sentence": core.Sentence,
-    "goals": core.Goals,
-    "messages": core.Messages,
-    "rich_sentence": core.RichSentence,
+    "text": serapi.Text,
+    "hypothesis": serapi.Hypothesis,
+    "goal": serapi.Goal,
+    "message": serapi.Message,
+    "sentence": serapi.Sentence,
+    "goals": serapi.Goals,
+    "messages": serapi.Messages,
+    "rich_sentence": serapi.RichSentence,
 }
 
 ALIASES_OF_TYPE = {
