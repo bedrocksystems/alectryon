@@ -18,13 +18,13 @@ _output/coqdoc.html: coqdoc.v
 	$(alectryon) $< --frontend coqdoc
 
 # JSON → JSON
-_output/fragments.io.json: fragments.json
+_output/fragments.io.json: fragments.v.json
 	$(alectryon) $<
 # JSON → HTML
-_output/fragments.snippets.html: fragments.json
+_output/fragments.snippets.html: fragments.v.json
 	$(alectryon) $< --backend snippets-html
 # JSON → LaTeX
-_output/fragments.snippets.tex: fragments.json
+_output/fragments.snippets.tex: fragments.v.json
 	$(alectryon) $< --backend snippets-latex
 
 # MyST → HTML
