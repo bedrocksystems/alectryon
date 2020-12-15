@@ -27,6 +27,10 @@ _output/fragments.snippets.html: fragments.v.json
 _output/fragments.snippets.tex: fragments.v.json
 	$(alectryon) $< --backend snippets-latex
 
+# reST+Lean → HTML
+_output/lean3-tutorial.html: lean3-tutorial.rst
+	$(alectryon) $<
+
 # MyST → HTML
 _output/literate_MyST.html: literate_MyST.md
 	$(alectryon) $<
@@ -74,6 +78,6 @@ _output/plain.lean.html: plain.lean
 _output/plain.v.html: plain.v
 	$(alectryon) --frontend coq $<
 
-_output/api.out _output/caching.html _output/coqdoc.html _output/fragments.io.json _output/fragments.snippets.html _output/fragments.snippets.tex _output/literate_MyST.html _output/literate_coq.html _output/literate_coq.tex _output/literate_coq.v.rst _output/literate_reST.html _output/literate_reST.tex _output/literate_reST.v _output/mathjax.html _output/minification.html _output/minimal.html _output/minimal.no-alectryon.html _output/plain.lean.html _output/plain.v.html: out_dir := _output
+_output/api.out _output/caching.html _output/coqdoc.html _output/fragments.io.json _output/fragments.snippets.html _output/fragments.snippets.tex _output/lean3-tutorial.html _output/literate_MyST.html _output/literate_coq.html _output/literate_coq.tex _output/literate_coq.v.rst _output/literate_reST.html _output/literate_reST.tex _output/literate_reST.v _output/mathjax.html _output/minification.html _output/minimal.html _output/minimal.no-alectryon.html _output/plain.lean.html _output/plain.v.html: out_dir := _output
 
-targets += _output/api.out _output/caching.html _output/coqdoc.html _output/fragments.io.json _output/fragments.snippets.html _output/fragments.snippets.tex _output/literate_MyST.html _output/literate_coq.html _output/literate_coq.tex _output/literate_coq.v.rst _output/literate_reST.html _output/literate_reST.tex _output/literate_reST.v _output/mathjax.html _output/minification.html _output/minimal.html _output/minimal.no-alectryon.html _output/plain.lean.html _output/plain.v.html
+targets += _output/api.out _output/caching.html _output/coqdoc.html _output/fragments.io.json _output/fragments.snippets.html _output/fragments.snippets.tex _output/lean3-tutorial.html _output/literate_MyST.html _output/literate_coq.html _output/literate_coq.tex _output/literate_coq.v.rst _output/literate_reST.html _output/literate_reST.tex _output/literate_reST.v _output/mathjax.html _output/minification.html _output/minimal.html _output/minimal.no-alectryon.html _output/plain.lean.html _output/plain.v.html
