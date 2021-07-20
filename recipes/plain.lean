@@ -1,8 +1,10 @@
-#check nat
-
 /- To compile:
      alectryon --frontend lean3 plain.lean # Lean → HTML; produces ‘plain.lean.html’ -/
 
+-- Queries:
+#check nat  #check bool
+
+-- Proofs:
 example (p q r : Prop) : p ∧ q ↔ q ∧ p :=
 begin
   apply iff.intro,
